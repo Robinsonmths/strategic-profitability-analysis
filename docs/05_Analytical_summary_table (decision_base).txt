@@ -1,0 +1,83 @@
+STEP 5 — ANALYTICAL SUMMARY TABLE (DECISION BASE)
+
+Step Objective
+
+Consolidate all validated metrics from previous steps into a single decision table that allows to:
+
+- Compare categories, products, and markets objectively
+- Identify where profit is generated, eroded, and destroyed
+- Serve as a direct basis for strategic classification (Prioritize / Adjust / Eliminate)
+
+At this stage, there is no visualization, only consolidated and coherent numbers.
+
+Unit of Analysis
+
+Analysis will be performed at three levels, always independently:
+
+- Category
+- Product
+- Market / Region
+
+Each level generates its own summary table.
+
+Summary Table Structure
+
+Each table should contain, at minimum, the following columns:
+
+Identification
+
+- Category
+- Product (when applicable)
+- Market / Region (when applicable)
+
+Volume and Revenue
+
+- Total Revenue (Sales)
+- Total Quantity Sold (Quantity)
+
+Costs and Results
+
+- Total Shipping Cost
+- Gross Profit (Profit)
+- Real Profit (Profit − Shipping Cost)
+
+Derived Metrics
+
+- Real Margin (%)
+  Real Profit / Total Revenue
+- Volume-weighted Average Discount
+- Shipping Cost as % of Revenue
+
+Business Impact
+
+- % Contribution to Total Profit
+- % Contribution to Total Loss (when applicable)
+
+Important Rules
+
+- No new metrics are created here
+  Only consolidation of what was already defined in Step 3.
+- No raw data is altered
+- Invalid rows should already have been treated or flagged in Step 4
+- All metrics must be financially coherent
+
+Table Reading Criteria
+
+The table should allow answering, just by looking at the numbers:
+
+- Who sells a lot but generates little profit?
+- Who generates absolute loss?
+- Where does shipping consume the results?
+- Where is the discount above the return generated?
+
+If the answer requires “creative interpretation,” the table is wrong.
+
+Expected Output of Step 5
+
+At the end of this step, you should have:
+
+- 1 summary table by Category
+- 1 summary table by Product
+- 1 summary table by Market / Region
+
+All purely numerical, with no classification yet.

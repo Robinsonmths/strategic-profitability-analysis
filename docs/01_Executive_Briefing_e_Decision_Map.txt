@@ -1,0 +1,91 @@
+Executive Briefing & Decision Map
+
+1. Am I making money the right way?
+Revenue is growing — but is profit growing at the same pace?
+Which categories generate high sales volume but fail to convert into cash flow?
+Where should sales efforts be reduced or stopped?
+
+2. Where exactly am I losing money?
+Which products generate direct losses?
+What is the root cause?
+Pricing?
+Discount strategy?
+Shipping cost?
+Am I effectively paying to sell?
+
+3. Is discounting helping or destroying the business?
+What is the healthy limit for discounts?
+Are there products that only sell with high discounts?
+If discounts are reduced by X%, does profit improve or does volume collapse?
+
+4. Where should I focus my strategy?
+Which markets or regions are worth scaling?
+Where should growth be limited or exited?
+Where does commercial effort generate the highest return per order?
+
+5. Is the issue product-related or operational?
+Is shipping cost eroding profitability?
+Are there regions where logistics costs are economically unjustifiable?
+Should the company:
+Increase prices?
+Change shipping policy?
+Reduce the product portfolio?
+
+6. If I had to make ONE decision today…
+“What would you change tomorrow if you were in my position?”
+Analytical Structure
+
+Stage 1 — Business Question
+“Which products and categories should be prioritized, adjusted, or eliminated to improve profitability without relying on revenue growth?”
+
+Stage 2 — Hypotheses
+H1: Categories with higher average discounts present significantly lower margins.
+H2: A small subset of categories concentrates most of the total losses.
+H3: In some categories, shipping cost is the primary driver of profit erosion.
+
+Stage 3 — Metrics Definition
+Which metrics answer these questions?
+Percentages and margins
+Volume and contribution percentage
+Comparison of results with and without shipping cost
+
+Stage 4 — Data Quality Gate
+Identification of invalid values
+Investigation of external or abnormal factors
+Financial logic validation
+
+Stage 5 — Analytical Summary Tables
+Category-level aggregation
+Product-level aggregation
+Market / Region-level aggregation
+At this stage, the analysis is strictly numerical.
+No classification or decision-making is performed yet.
+
+Stage 6 — Scenario Exploration & Decision
+Scenario simulation
+Decision filtering
+Executive conclusions and recommendations
+Category Classification Framework (Final)
+
+🟢 PRIORITIZE
+Positive real profit
+Healthy margins
+Low dependency on discounts
+Shipping cost does not compromise results
+
+🟡 ADJUST
+Positive profit with low margins
+OR
+Negative profit with high sales volume
+OR
+High sensitivity to discounts or shipping cost
+Possible actions:
+Repricing
+Discount strategy adjustment
+Logistics review
+
+🔴 ELIMINATE
+Negative real profit
+Recurring negative margins
+Logistics makes the category economically unviable
+Action: discontinue or renegotiate.

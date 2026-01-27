@@ -1,0 +1,143 @@
+02_business_context_and_objective.md
+---
+
+# 📊 Category Profitability Analysis Case
+
+**Global Sales Dataset – Strategic Analysis**
+
+---
+
+## 1️⃣ Business Context
+
+The company operates in the sale of physical products across multiple global markets, covering several categories, subcategories, regions, and shipping modes.
+Despite a significant sales volume, there are strong indications that **real profitability is not fully transparent**, especially when discounts and shipping costs are taken into account.
+
+Senior management aims to understand which categories truly sustain the operation and which may be **masking losses or operational inefficiencies**.
+
+---
+
+## 2️⃣ Analysis Objective
+
+Evaluate the **real profitability of product categories**, considering:
+
+* Revenue
+* Sales volume
+* Applied discounts
+* Shipping cost
+* Net profit after shipping cost
+
+With the goal of classifying categories and products as:
+
+* **Viable**
+* **Adjustable**
+* **Critical** (requiring strategic review)
+
+---
+
+## 3️⃣ Business Questions
+
+* Which categories generate the highest real profit?
+* Are there categories with high volume but low margins?
+* Does shipping cost significantly compromise profitability in any category?
+* Is the average discount, when weighted by volume, aligned with financial return?
+* Are there products or categories that appear profitable but become unviable after shipping cost?
+
+---
+
+## 4️⃣ Analyzed Hypotheses
+
+### H1 — Category Profitability
+
+Some categories may show positive profit but extremely low real margins, compromising long-term sustainability.
+
+---
+
+### H2 — Discount vs. Volume
+
+Discounts only make sense when associated with high sales volume.
+Discounts applied to low-volume sales may erode margins without delivering operational gains.
+
+---
+
+### H3 — Impact of Shipping Cost on Real Profit
+
+Shipping cost may fully offset operating profit, especially for low-ticket products or inefficient shipping models.
+
+---
+
+## 5️⃣ Data Assumptions and Treatment
+
+### 🔹 Outliers
+
+* Extreme percentages and values are not used as direct decision metrics
+* Analysis focuses on totals, weighted averages, and aggregated margins
+
+---
+
+### 🔹 Negative Profits
+
+* If **< 1%** of rows present negative profit → excluded, with documented caveat
+* If **≈ 10% or more** → analyzed separately to identify root causes
+* Initially treated as potential data issues or operational distortions, never discarded without investigation
+
+---
+
+## 6️⃣ Official Project Metrics
+
+The metrics used for decision-making are:
+
+* **Sales** — Total Revenue
+* **Quantity** — Units Sold
+* **Shipping Cost** — Total Shipping Cost
+* **Real Profit** = Profit − Shipping Cost
+* **Real Margin (%)** = Real Profit / Sales
+* **Weighted Average Discount**, weighted by Quantity
+
+⚠️ Simple average discounts are not used, as they do not reflect scale efficiency.
+
+---
+
+## 7️⃣ Initial Unit of Analysis
+
+The analysis starts at the **Category** level, focusing on:
+
+* Total volume
+* Total revenue
+* Total shipping cost
+* Aggregated real profit
+* Real margin
+
+From this point, critical categories may be further broken down into **Sub-Category or Product-level analysis**.
+
+---
+
+## 8️⃣ Strategic Decision Criteria
+
+Situation                       			 		 Action                                          
+
+Positive profit + healthy margin  			Maintain                                        
+Positive profit + low margin     			Adjust pricing, discount strategy, or logistics 
+Low volume + high margin         			Caution: excessive dependency                   
+Profit compromised by shipping   			Review logistics model                          
+Recurring negative profit        				Review or discontinue                           
+
+---
+
+## 9️⃣ Expected Outcome
+
+By the end of the project, the company will have:
+
+* Clear visibility into which categories truly sustain the business
+* Identification of hidden operational inefficiencies
+* A solid analytical foundation for pricing, discount, and logistics decisions
+* A **replicable analytical framework** for future analyses
+
+---
+
+### ✅ Status
+
+* Ready to commit
+* Fully aligned with the dataset schema
+* Consistent with the previously defined analytical framework
+
+Quando quiser, envie o próximo documento para tradução **ou** seguimos direto para a **ETAPA 4.5 (primeira agregação em código)**.

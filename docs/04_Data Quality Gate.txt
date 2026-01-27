@@ -1,0 +1,83 @@
+STEP 4 — Data Quality Gate
+Step Objective
+
+Ensure the data has sufficient consistency, completeness, and logical coherence to support the metrics and hypotheses defined in Step 3.
+👉 No metric is calculated, no visualization is created, and no conclusion is drawn before this gate is approved.
+This step does not involve visualization yet, but already works with data in a controlled manner.
+Core Principle of Step 4
+Data that does not pass the quality gate is not included in the analysis.
+If a critical field fails, the associated metric is invalidated, not “adjusted.”
+Critical Fields of the Project
+
+The following fields are considered mandatory for the analysis:
+Category
+Sub-Category
+Sales
+Quantity
+Profit
+Discount
+Shipping Cost
+Any row with absence or severe inconsistency in these fields must be handled (corrected or excluded), with the decision recorded.
+
+Dimensions of the Data Quality Gate
+4.1 — Completeness
+Check for null or missing values in critical fields.
+Criteria:
+Category, Sub-Category: cannot be null
+Sales, Quantity, Profit, Shipping Cost: cannot be null
+Discount: may be null only if interpreted as zero (explicit rule)
+📌 Expected action:
+Map the % of nulls per critical column and decide to:
+Correct
+Impute (only if logically sound)
+Exclude
+
+4.2 — Domain Validation
+
+Check if values make sense within the business domain.
+
+Minimum rules:
+Quantity > 0
+Sales ≥ 0
+Shipping Cost ≥ 0
+Discount ∈ [0, 1] or [0%, 100%] (depending on format)
+Profit can be negative (loss is valid information)
+📌 Expected action:
+Identify records outside the domain and classify them as:
+Data error
+Documented exceptional case
+
+4.3 — Logical Consistency
+Evaluate logical relationships between fields.
+Mandatory checks:
+Sales = Unit Price × Quantity — when unit price is available
+Profit = Sales − Cost — if cost is available
+Real Profit = Profit − Shipping Cost — must be mathematically consistent
+Margins outside plausible range (e.g., >100% or <−100%) should be investigated
+📌 Expected action:
+Validate that derived calculations do not produce mathematical absurdities.
+
+4.4 — Basic Statistical Consistency
+Simple evaluation to detect gross issues, not to remove outliers yet.
+Expected analyses:
+Distribution of Sales, Profit, Shipping Cost
+Identification of extremely concentrated or isolated values
+Comparison between mean and median
+📌 Important:
+👉 Outliers are not removed at this stage, only flagged.
+
+4.5 — Traceability and Reproducibility
+Ensure anyone can answer:
+Where did this data come from?
+What transformation was applied?
+At what step did this happen?
+Minimum good practices:
+Original dataset preserved
+Cleaned dataset separated (e.g., data_raw → data_clean)
+Documented rules (README or markdown)
+Gate Approval Criteria
+The Quality Gate is considered approved when:
+No critical field remains without a defined rule
+All exclusions or corrections are documented
+Metrics from Step 3 can be calculated without ambiguity
+There are no unexplained logical inconsistencies

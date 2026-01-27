@@ -1,0 +1,144 @@
+Perfeito. Abaixo está a **tradução para o inglês**, mantendo **terminologia analítica, tom profissional e alinhamento com bases de dados em inglês** (Sales, Profit, Quantity, Shipping Cost etc.).
+Não é tradução literal — é **tradução técnica correta**.
+
+---
+
+## **STEP 3 — Definition of Metrics and Analytical Logic**
+
+### **Objective of the Step**
+
+Define which metrics will be used, at which level of aggregation, and how each metric directly answers the business questions and hypotheses raised — **before** any calculation or visualization.
+
+This step **does not involve code, charts, or data exploration**, only the formalization of the analytical logic.
+
+---
+
+### **Primary Unit of Analysis**
+
+The analysis will start at the **Category level**.
+
+Other levels (Subcategory, Product, Market/Region) will be used **only for drill-down**, when a category shows warning signals or opportunities.
+
+This decision avoids fragmented analyses and ensures focus on **strategic decision-making**.
+
+---
+
+### **Official Project Metrics (Category Level)**
+
+The following metrics are considered **official** and will be used as the basis for all decisions:
+
+#### **Volume**
+
+* **Quantity (Total)**
+* Share of total volume (%)
+
+#### **Revenue**
+
+* **Sales (Total)**
+* Share of total revenue (%)
+
+#### **Logistics**
+
+* **Shipping Cost (Total)**
+* **Shipping Cost / Sales (%)**
+
+#### **Profit**
+
+* **Gross Profit**
+* **Real Profit = Profit − Shipping Cost**
+* **Real Margin (%) = Real Profit / Sales**
+
+> From this point forward, the **only valid profit for decision-making is profit after shipping cost (Real Profit)**.
+
+---
+
+### **Discount Metric**
+
+#### **Adopted Approach**
+
+Discount will be analyzed as a **Quantity-Weighted Average Discount**.
+
+#### **Justification**
+
+* Discounts are only considered healthy when associated with **scale gains**.
+* Simple average discounts distort the analysis by giving the same weight to small and large orders.
+
+---
+
+### **Metrics by Hypothesis**
+
+#### **H1 — “Categories with higher average discount show significantly lower margins.”**
+
+**Metrics used:**
+
+* Weighted average discount
+* Real margin (%)
+* Comparative analysis across categories
+
+---
+
+#### **H2 — “A small number of categories concentrate most of the total losses.”**
+
+**Metrics used:**
+
+* Total Real Profit by category
+* Percentage share of total losses
+* Negative impact ranking
+
+---
+
+#### **H3 — “In some categories, shipping cost is the main driver of profit loss.”**
+
+**Metrics used:**
+
+* Gross Profit
+* Real Profit
+* Absolute and percentage difference between them
+* Shipping Cost / Sales (%)
+
+This analysis allows separating **product issues** from **operational/logistics issues**.
+
+---
+
+### **Supporting (Contextual) Metrics**
+
+The following metrics **do not drive decisions in isolation**, but support interpretation:
+
+* Average ticket (Sales / Quantity)
+* Real profit per unit
+* Real profit per order
+
+---
+
+### **Metrics and Analyses Explicitly Excluded at This Stage**
+
+To avoid analytical noise, the following are excluded from this step:
+
+* Time-series analysis
+* Outliers as a primary metric
+* Percentages without volume base
+* Predictive models
+* Advanced segmentations
+
+These analyses will only be considered **if they emerge as necessary after the initial conclusions**.
+
+---
+
+### **Expected Outcome of Step 3**
+
+By the end of this step, the project has:
+
+* Clearly defined metrics
+* Hypotheses directly linked to objective numbers
+* Established decision unit
+* Solid analytical foundation for the **Quality Gate (Step 4)**
+
+✔️ **STEP 3 — COMPLETED**
+
+---
+
+Se quiser, no próximo passo eu posso:
+
+* revisar **nomenclatura vs colunas reais do dataset**, ou
+* preparar isso já no **formato de README.md / documentação do projeto**, ou
+* avançar direto para a **Etapa 4 (Gate de Qualidade)** com critérios objetivos.
