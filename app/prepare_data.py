@@ -1,5 +1,4 @@
 import pandas as pd
-#%%
 #carregando dados
 df = pd.read_csv(r'C:\Users\MATHEUS\Desktop\PROGRAMAÇÃO\PROJETOS\VENDAS\data\superstore.csv')
 # Agrupar por Category e somar o Real Profit
